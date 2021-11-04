@@ -5,21 +5,21 @@
 # Modules 
 * [CS6100 Authoring](https://www.ucc.ie/modules/descriptions/CS.html#CS6100)
 * [CS6101 Web Development for Digital Media](https://www.ucc.ie/modules/descriptions/page014.html#CS6101)
-* CS6102 Graphics for Interactive Media
-* CS6103 Audio and Sound Engineering
-* CS6104 Digital Video Capture and Packaging
-* CS6111 3D Graphics and Modelling
-* CS6105 Future and Emerging Interaction Technologies
-* CS6113 Internet-based Applications
-* CS6114 Digital Video Compression and Delivery
-* CS6115 Human-Computer Interaction
-* CS6116 Mobile Multimedia
-* CS6117 Audio Processing
+* [CS6102 Graphics for Interactive Media](https://www.ucc.ie/modules/descriptions/page014.html#CS6102)
+* [CS6103 Audio and Sound Engineering](https://www.ucc.ie/modules/descriptions/page014.html#CS6103)
+* [CS6104 Digital Video Capture and Packaging](https://www.ucc.ie/modules/descriptions/page014.html#CS6101)
+* [CS6111 3D Graphics and Modelling](https://www.ucc.ie/modules/descriptions/page014.html#CS6101)
+* [CS6105 Future and Emerging Interaction Technologies](https://www.ucc.ie/modules/descriptions/page014.html#CS6101)
+* [CS6113 Internet-based Applications](https://www.ucc.ie/modules/descriptions/page014.html#CS6101)
+* [CS6114 Digital Video Compression and Delivery](https://www.ucc.ie/modules/descriptions/page014.html#CS6101)
+* [CS6115 Human-Computer Interaction](https://www.ucc.ie/modules/descriptions/page014.html#CS6101)
+* [CS6116 Mobile Multimedia](https://www.ucc.ie/modules/descriptions/page014.html#CS6101)
+* [CS6117 Audio Processing](https://www.ucc.ie/modules/descriptions/page014.html#CS6101)
+
+
 # Modules 
 # ---
-You can use the [editor on GitHub](https://github.com/carolyuanliu/MyPage/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
 ### Markdown
 
