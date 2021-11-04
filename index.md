@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## About Yuan Liu
 
 You can use the [editor on GitHub](https://github.com/carolyuanliu/MyPage/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
