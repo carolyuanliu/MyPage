@@ -2,7 +2,20 @@
 - A current postgraduate student of MSc Interactive Media at UCC, expected to graduate in 2021.
 - Used to be a Landscape Architect, worked for Planning Bureau.
 
-
+# Modules 
+* CS6100 Authoring
+* CS6101 Web Development for Digital Media
+* CS6102 Graphics for Interactive Media
+* CS6103 Audio and Sound Engineering
+* CS6104 Digital Video Capture and Packaging
+* CS6111 3D Graphics and Modelling
+* CS6105 Future and Emerging Interaction Technologies
+* CS6113 Internet-based Applications
+* CS6114 Digital Video Compression and Delivery
+* CS6115 Human-Computer Interaction
+* CS6116 Mobile Multimedia
+* CS6117 Audio Processing
+# Modules 
 # ---
 You can use the [editor on GitHub](https://github.com/carolyuanliu/MyPage/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
