@@ -1,6 +1,6 @@
 # About Yuan Liu
-A current postgraduate student of MSc Interactive Media at UCC, expected to graduate in 2021.
-Used to be a Landscape Architect, worked for Planning Bureau.
+- A current postgraduate student of MSc Interactive Media at UCC, expected to graduate in 2021.
+- Used to be a Landscape Architect, worked for Planning Bureau.
 
 
 # ---
