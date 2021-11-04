@@ -3,8 +3,8 @@
 - Used to be a Landscape Architect, worked for Planning Bureau.
 
 # Modules 
-* CS6100 Authoring
-* CS6101 Web Development for Digital Media
+* [CS6100 Authoring](https://www.ucc.ie/modules/descriptions/CS.html#CS6100)
+* [CS6101 Web Development for Digital Media](https://www.ucc.ie/modules/descriptions/page014.html#CS6101)
 * CS6102 Graphics for Interactive Media
 * CS6103 Audio and Sound Engineering
 * CS6104 Digital Video Capture and Packaging
