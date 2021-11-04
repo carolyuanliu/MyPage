@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	 <title> UCC Computer Science Student </title>
+   <meta http-equiv="content-type">
+   <meta charset="UTF-8">
+
+   <link id="csslink" rel="stylesheet" href="styleSheets/light.css">
+
+  </head>
+
+<body onload="loadJS('content.json')">
+<!--Navigation Bar-->
+  <div class="nav">
+          <div id="container"></div>
+
+<!--Theme Buttons-->
+          <button class="thmbtn" name="Light" onclick="switchTheme('styleSheets/light.css', this.name)"><img src="icons/light.svg"/> Light Theme</button>
+          <button class="thmbtn" name="Dark" onclick="switchTheme('styleSheets/dark.css', this.name)"><img src="icons/dark.svg"/> Dark Theme</button>
+          <button class="thmbtn" name="Large Fonts" onclick="switchTheme('styleSheets/large_fonts.css', this.name)"><img src="icons/large_fonts.svg"/> Large Fonts</button>
+
+    </div>
+
+<!--Content-->
+  <div  class="cont" >
+    <p id="content" > </p>
+    <button id="toggle" class="toggle" onclick="toggle()">+ Show More</button>
+  </div>
+
+<!--Message-->
+  <div class="message">
+   <p>Message:  </p>
+   <a id="msg"></a>
+  </div>
+
+  <script>
+
+//---------------load JSON function----------------------
+    var array;//the global variable for json array
+    function loadJS(url) {
+      array=[];// clear the array when reload
+      fetch(url)
+          .then(x => process(x), e => writeMsg('Fetch failed!!!', e))
+          .then(r => addButton(r))
+    }
+
+ // process
+    function process(r){
+      if(r.ok){
+        writeMsg("Successfully loaded!", 2);
+        array = r.json();
+        return array;
+      }else{
+        writeMsg("Error!",0);
+      }
+    }
+
+//create nav-buttons automatically
+  function addButton(r){
+          array=r;
+          console.log(array);
+          array.forEach( function (obj, key) {
+          document.getElementById('container').innerHTML += `<button class="navbtn" onclick="clicked(${key})"><img src="icons/${obj.title}.svg"/>  ${obj.title}</button>`;
+          document.getElementById('content').innerHTML = array[0].abstract;//default content
+          });
+    }
+
+//--------nav-buttons clicked function----------------------------
+    function clicked(key){
+       console.log(`Button${array[key].title} was clicked `);
+       document.getElementById('content').innerHTML = array[key].abstract;
+       document.getElementById('toggle').innerHTML = '+ Show More';
+       writeMsg(array[key].title+" page successfully loaded.",2);
+    }
+
+//-------function of toggle button (show more/show less)-------
+    function toggle(){
+      var object = document.getElementById('content').innerHTML;
+      //console.log("toggle is clicked");
+      //console.log( array.length);
+      //console.log(object);
+
+      //detect every object in the array, switch the content
+      for (i = 0; i < array.length; i++){
+        if (object == array[i].abstract ){
+          document.getElementById('content').innerHTML = array[i].long;
+        }
+        else if(object == array[i].long){
+          document.getElementById('content').innerHTML = array[i].abstract;
+        }
+     }
+
+    //switch toggle button text
+     var btntxt = document.getElementById('toggle').innerHTML
+     if(btntxt=='+ Show More'){
+       document.getElementById('toggle').innerHTML = '- Show Less';
+       writeMsg("Switched to full content.",2);
+     }
+     else {
+        document.getElementById('toggle').innerHTML = '+ Show More';
+        writeMsg("Switched to abstract.",2);
+     }
+    }
+
+//---------------message function--------------------
+    function writeMsg(txt, level){
+      var txtColor;
+      //switch the message level(color)
+      switch(level){
+        case 0:
+            txtColor = "red";
+            break;
+        case 1:
+            txtColor = "blue";
+            break;
+        case 2:
+            txtColor = "green";
+            break;
+        default:
+            txtColor = "white";
+      }
+        document.getElementById("msg").innerHTML = txt;
+        document.getElementById("msg").style.color = txtColor;
+    }
+
+//-------------- swich theme function--------------------
+    function switchTheme(newcss, name){
+      document.getElementById('csslink').href = newcss;
+      writeMsg('Theme switched to ' + name, 2);
+    }
+
+  </script>
+ </body>
+</html>
