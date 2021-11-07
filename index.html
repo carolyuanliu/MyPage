@@ -78,7 +78,7 @@
     function clicked(key){
        console.log(`Button${array[key].title} was clicked `);
        document.getElementById('content').innerHTML = array[key].abstract;
-       document.getElementById('pic').innerHTML.href = array[key].pic;
+       document.getElementById('pic').innerHTML.src = array[key].pic;
        document.getElementById('toggle').innerHTML = '+ Show More';
        writeMsg(array[key].title+" page successfully loaded.",2);
     }
