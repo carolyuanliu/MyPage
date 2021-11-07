@@ -32,6 +32,9 @@
     <p id="content" > </p>
     <button id="toggle" class="toggle" onclick="toggle()">+More</button>
   </div>
+  <div  class="pic" >
+    <img id="pic"> </img>
+  </div>
 
 <!--Message-->
   <div class="message">
@@ -75,6 +78,7 @@
     function clicked(key){
        console.log(`Button${array[key].title} was clicked `);
        document.getElementById('content').innerHTML = array[key].abstract;
+       document.getElementById('pic').innerHTML.href = array[key].pic;
        document.getElementById('toggle').innerHTML = '+ Show More';
        writeMsg(array[key].title+" page successfully loaded.",2);
     }
