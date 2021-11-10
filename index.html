@@ -53,6 +53,14 @@
           .then(r => addButton(r))
     }
 
+
+//------------load md------
+    function loadMD(url){
+      fetch(url)
+      .then(x => process(x), e => writeMsg('Fetch failed!!!', e))
+      .then(r => document.getElementById('content').innerHTML = r)
+    }
+
  // process
     function process(r){
       if(r.ok){
